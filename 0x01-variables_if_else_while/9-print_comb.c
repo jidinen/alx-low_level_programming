@@ -11,13 +11,16 @@
 int main(void)
 {
 int lox = 48;
-while (lox <= 57)
+while (lox < 58)
 {
 
 putchar(lox);
-putchar(',');
 lox++;
+if (lox != 58)
+{
+putchar(',');
 putchar(' ');
+}
 }
 putchar('\n');
 return (0);
