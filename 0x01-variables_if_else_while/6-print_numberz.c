@@ -19,5 +19,5 @@ putchar(iox);
 iox++;
 }
 putchar('\n');
-return (O);
+return (0);
 }
