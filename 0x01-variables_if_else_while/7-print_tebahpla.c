@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  *main - Entry point
  *
  *
@@ -11,10 +11,10 @@
  *
  */
 
-int main()
+int main(void)
 {
 int last = 122;
-while ( last >= 97)
+while (last >= 97)
 {
 putchar(last);
 last--;
