@@ -5,25 +5,24 @@
  *
  *
  *
- *@int: the number
+ *@a: the number
  *
+ *Return: a
  *
- *
- *Return: absolute value
  *
  *
  *
  */
 int _abs(int a)
 {
-int j; 
+int j;
 int result;
 j = -1;
 if (a > 0)
 {
 return (a);
 }
-else if ( a < 0)
+else if (a < 0)
 {
 result = a * j;
 return (result);
