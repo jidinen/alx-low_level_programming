@@ -16,20 +16,25 @@
 
 void jack_bauer(void)
 {
-int i,j;
-for(i = 10; i <= 23; i++)
+int i, j;
+for (i = 0; i <= 23; i++)
 {
-for(j = 0; j <= 59; j++)
+for (j = 0; j <= 59; j++)
 {
-if (i  < 10)
+if (i < 10)
 {
-_putchar('O');
+_putchar('0');
 }
-_putchar(i / 10 + 'O');
-_putchar(i % 10 + 'O');
+_putchar(i / 10 + '0');
+_putchar(i % 10 + '0');
 _putchar(':');
-_putchar(j / 10 + 'O');}
-_putchar(j % 10 + 'O');
+if (j < 10)
+{
+_putchar('0');
+}
+_putchar(j / 10 + '0');
+_putchar(j % 10 + '0');
+_putchar('\n');
 }
 }
-
+}
