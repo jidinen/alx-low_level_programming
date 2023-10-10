@@ -7,9 +7,8 @@
  *
  *@n: function takes one parameter
  *
+ *Return: 0 for zero,1 for positive and -1 for negative
  *
- *
- *Return: 1 for positive,0 for zero , -1 negative
  *
  *
  */
