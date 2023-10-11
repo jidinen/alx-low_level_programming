@@ -16,37 +16,37 @@
 
 void print_to_98(int n)
 {
-int x;
+
 if (n <= 98)
 {
-for (x = n; x <= 98; x++)
+for (; n <= 98; n++)
 {
-if (x == 98)
+if (n == 98)
 {
-printf("%d ,", x);
+printf("%d ,", n);
 printf("\n");
 break;
 }
 else
 {
-printf("%d, ", x);
+printf("%d, ", n);
 }
 
 }
 }
 if (n <= 98)
 {
-for (x = n; x >= 0; x--)
+for (; n >= 0; n--)
 {
-if (x == 98)
+if (n == 98)
 {
-printf("%d, ", x);
+printf("%d, ", n);
 printf("\n");
 break;
 }
 else
 {
-printf("%d ,", x);
+printf("%d ,", n);
 }
 }
 }
