@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print number of line base on parameter
+ *print_line - number of line base on parameter
  *
  *@n: the number of lines should be printed
  *
