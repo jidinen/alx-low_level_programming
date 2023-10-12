@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
+ *print number of line base on parameter
  *
+ *@n: the number of lines should be printed
  *
- *
- *
- *
+ *Return: void
  *
  *
  *
