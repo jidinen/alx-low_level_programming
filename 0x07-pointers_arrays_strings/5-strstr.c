@@ -18,9 +18,9 @@ char *_strstr(char *haystack, char *needle)
 {
 for (; *haystack != '\0'; haystack++)
 {
-char *p;
-char l;
-while (*p == l && *l != '\0')
+char *p = haystack;
+char *l = needle;
+while (*p == *l && *l != '\0')
 {
 p++;
 l++;
@@ -29,6 +29,6 @@ if (*l == '\0')
 {
 return (haystack);
 }
-return (0);
 }
+return (0);
 }
