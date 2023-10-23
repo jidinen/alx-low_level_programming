@@ -5,7 +5,7 @@
  *@haystack : param
  *
  *
- *#needle : param
+ *@needle : param
  *
  *Return: finds the first occurrence of the substring needle in the string
  *
