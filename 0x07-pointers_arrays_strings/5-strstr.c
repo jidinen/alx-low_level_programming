@@ -16,19 +16,19 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-int c;
-
-while (*haystack)
+for (; *haystack != '\0'; haystack++)
 {
-for (c = 0; needle[c] != '\0'; c++)
+char *p;
+char l;
+while (*p == l && *l != '\0')
 {
-if (*haystack == needle[c])
-{
-return (needle);
+p++;
+l++;
 }
-
-}
-haystack++;
+if (*l == '\0')
+{
+return (haystack);
 }
 return (0);
+}
 }
