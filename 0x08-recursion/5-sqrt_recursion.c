@@ -1,5 +1,5 @@
 #include "main.h"
-
+int _f_sqrt(int n, int i);
 /**
  *_sqrt_recursion - prints the square root of n
  *
@@ -17,23 +17,22 @@
 
 int _sqrt_recursion(int n)
 {
-int i;
-int product;
-if (n == 1)
+if (n == 0)
 {
-return (1);
+return (-1);
 }
-for (i = 0; i < n; i++)
+return (_f_sqrt(n, 0));
+}
+
+int _f_sqrt(int n, int i)
 {
-product = i * i;
-if (product == n)
+if (i * i > n)
+{
+return (-1);
+}
+else if (i * i == n)
 {
 return (i);
 }
-}
-if (product < n)
-{
-return (_sqrt_recursion(n - product));
-}
-return (-1);
+return (_f_sqrt(n, i +1));
 }
