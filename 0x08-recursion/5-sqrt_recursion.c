@@ -23,7 +23,17 @@ return (-1);
 }
 return (_f_sqrt(n, 0));
 }
-
+/**
+ *_f_sqrt - prints the root of a number
+ *
+ *
+ *@n: the number
+ *
+ *@i: the counter
+ *
+ *Return: the sqaure roots
+ *
+ */
 int _f_sqrt(int n, int i)
 {
 if (i * i > n)
@@ -34,5 +44,5 @@ else if (i * i == n)
 {
 return (i);
 }
-return (_f_sqrt(n, i +1));
+return (_f_sqrt(n, i + 1));
 }
