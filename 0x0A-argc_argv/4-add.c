@@ -9,10 +9,9 @@
  *
  *
  *
- *
  *@str: string
  *
- *Return ; 0 & -1
+ *Return: 0 & -1
  *
  */
 
@@ -26,7 +25,7 @@
 int check_num(char *str)
 {
 unsigned int i;
-while(i < strlen(str))
+while (i < strlen(str))
 {
 if (!isdigit(str[i]))
 {
@@ -41,11 +40,11 @@ return (-1);
  *main - Entry point
  *
  *
- *@argc; first param
+ *@argc: first param
  *
  *@argv: sec
  *
- *
+ *Return: 0
  */
 
 int main(int argc, char *argv[])
@@ -58,14 +57,14 @@ if (check_num(argv[i]))
 {
 sum += atoi(argv[i]);
 }
-else 
+else
 {
 printf("Error\n");
 return (1);
 }
 i++;
 }
-printf("%d\n",sum);
+printf("%d\n", sum);
 
 return (0);
 }

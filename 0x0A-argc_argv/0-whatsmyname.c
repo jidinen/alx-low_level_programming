@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
+ *main - Entry point
  *
+ *@argc: first
  *
+ *@argv: second
  *
- *
- *
- *
- *
+ *Return: 0
  *
  */
 
