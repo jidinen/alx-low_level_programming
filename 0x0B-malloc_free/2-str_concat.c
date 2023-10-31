@@ -34,11 +34,11 @@ i++;
 t = (char *)malloc((total + 1) * sizeof(char));
 if(s1 == NULL)
 {
-s1 = "";
+return (s1);
 }
 if (s2 == NULL)
 {
-s2 ="";
+return (s2);
 }
 if (t == NULL)
 {
