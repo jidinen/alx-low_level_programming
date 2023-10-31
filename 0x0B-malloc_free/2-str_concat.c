@@ -22,6 +22,11 @@ char *t;
 j = 0;
 i = 0;
 total = 0;
+char *x = "";
+if (s1 == NULL || s2 == NULL)
+{
+return (x);
+}
 while (s1[total] != '\0')
 {
 total++;
@@ -32,18 +37,6 @@ total++;
 i++;
 }
 t = (char *)malloc((total + 1) * sizeof(char));
-if(s1 == NULL)
-{
-return (s1);
-}
-if (s2 == NULL)
-{
-return (s2);
-}
-if (t == NULL)
-{
-return (NULL);
-}
 for (i = 0; s1[i] != '\0'; i++)
 {
 t[i] = s1[i];
