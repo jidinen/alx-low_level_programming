@@ -19,9 +19,9 @@ int s, i;
 char *t;
 s = 0;
 t = (char *)malloc(s + 1 * sizeof(char));
-if (t == 0)
+if (t == NULL)
 {
-return (0);
+return (NULL);
 }
 while (str[s] != '\0')
 {
