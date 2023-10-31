@@ -16,11 +16,10 @@
 char *create_array(unsigned int size, char c)
 {
 unsigned int i;
-char *error = "failed to allocate memory";
 char *newarr;
 if (size <= 0)
 {
-return(error);
+return(NULL);
 }
 newarr = (char *) malloc(size   * sizeof(char));
 if (newarr == NULL)
