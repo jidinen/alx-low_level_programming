@@ -19,7 +19,7 @@ unsigned int i;
 char *newarr;
 
 newarr = (char *) malloc(size   * sizeof(char));
-if (newarr == 0)
+if (newarr == NULL)
 {
 return (NULL);
 }
