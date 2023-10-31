@@ -23,7 +23,7 @@ return (NULL);
 }
 newarr = (char *) malloc(size   * sizeof(char));
 if (newarr == NULL)
-{ 
+{
 return (NULL);
 }
 for (i = 0; i < size; i++)
