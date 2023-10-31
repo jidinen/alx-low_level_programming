@@ -21,7 +21,7 @@ char *newarr;
 newarr = (char *) malloc(size   * sizeof(char));
 if (newarr == NULL)
 {
-return (NULL);
+return ("failed to allocate memory");
 }
 for (i = 0; i < size; i++)
 {
