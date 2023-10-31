@@ -19,11 +19,12 @@ unsigned int i;
 char *newarr;
 if (size <= 0)
 {
-return(NULL);
+return (NULL);
 }
 newarr = (char *) malloc(size   * sizeof(char));
 if (newarr == NULL)
-{ return (NULL);
+{ 
+return (NULL);
 }
 for (i = 0; i < size; i++)
 {
