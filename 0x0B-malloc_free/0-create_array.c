@@ -17,11 +17,13 @@ char *create_array(unsigned int size, char c)
 {
 unsigned int i;
 char *newarr;
-
-newarr = (char *) malloc(size   * sizeof(char));
-if (newarr == NULL || newarr == 0)
+if (size <= 0)
 {
-return ("failed to allocate memory");
+return("failed to allocate memory");
+}
+newarr = (char *) malloc(size   * sizeof(char));
+if (newarr == NULL)
+{ return (NULL);
 }
 for (i = 0; i < size; i++)
 {
