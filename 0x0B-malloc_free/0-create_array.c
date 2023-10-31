@@ -19,7 +19,7 @@ unsigned int i;
 char *newarr;
 
 newarr = (char *) malloc(size   * sizeof(char));
-if (newarr == NULL)
+if (newarr == NULL || newarr == 0)
 {
 return ("failed to allocate memory");
 }
