@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 {
 int i, j, total;
 char *t;
-char x = "";
+
 j = 0;
 i = 0;
 total = 0;
