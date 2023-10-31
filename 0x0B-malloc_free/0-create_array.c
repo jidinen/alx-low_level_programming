@@ -27,6 +27,5 @@ for (i = 0; i < size; i++)
 {
 newarr[i] = c;
 }
-newarr[size] = '\0';
 return (newarr);
 }
