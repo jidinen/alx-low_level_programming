@@ -18,7 +18,7 @@ char *create_array(unsigned int size, char c)
 unsigned int i;
 char *newarr;
 
-newarr = (char *) malloc((size + 1) * sizeof(char));
+newarr = (char *) malloc(size   * sizeof(char));
 if (newarr == 0)
 {
 return (NULL);
@@ -27,5 +27,6 @@ for (i = 0; i < size; i++)
 {
 newarr[i] = c;
 }
+new[i] = '\0';
 return (newarr);
 }
