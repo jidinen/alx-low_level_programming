@@ -33,7 +33,7 @@ return (NULL);
 
 for (i = 0; i < width; i++)
 {
-x[i] = (int *)malloc(height * sizeof(int *));
+x[i] = (int *)malloc(height * sizeof(int));
 if (x[i] == NULL)
 {
 for (j = 0;  j < i; j++)
