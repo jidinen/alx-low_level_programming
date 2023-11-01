@@ -25,7 +25,7 @@ i = 0;
 total = 0;
 if (s1 == NULL)
 {
-s1 ="";
+s1 = "";
 }
 if (s2 == NULL)
 {
