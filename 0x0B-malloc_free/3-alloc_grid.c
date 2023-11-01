@@ -26,14 +26,11 @@ if(x == NULL)
 {
 return (NULL);
 }
-if (width <= 0)
+if (width <= 0 && height <= 0)
 {
 return (NULL);
 }
-if (height <= 0)
-{
-return (NULL);
-}
+
 for (i = 0; i < width; i++)
 {
 x[i] = (int *)malloc(height * sizeof(int *));
