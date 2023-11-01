@@ -41,6 +41,10 @@ total++;
 i++;
 }
 t = (char *)malloc((total + 1) * sizeof(char));
+if (t == NULL)
+{
+return (NULL);
+}
 for (i = 0; s1[i] != '\0'; i++)
 {
 t[i] = s1[i];
@@ -49,6 +53,7 @@ for (j = 0; s2[j] != '\0'; j++)
 {
 t[i + j] = s2[j];
 }
-t[i + j] = '\0';
+it[i + j] = '\0';
 return (t);
+
 }
