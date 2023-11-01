@@ -38,7 +38,7 @@ if (x[i] == NULL)
 {
 for (j = 0;  j < i; j++)
 {
-free(x);
+free(x[j]);
 }
 free(x);
 return (NULL);
