@@ -19,8 +19,6 @@ void *x;
 x = malloc(sizeof(b));
 if (x == NULL)
 {
-
-
 exit(98);
 }
 return (x);
