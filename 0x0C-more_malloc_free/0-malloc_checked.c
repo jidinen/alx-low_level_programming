@@ -16,13 +16,13 @@
 void *malloc_checked(unsigned int b)
 {
 void *x;
-x = malloc(sizeof(void *) * b);
+x = malloc(sizeof(*b));
 if (x == NULL)
 {
 
 
 exit(98);
 }
-
+free(x);
 return (x);
 }
