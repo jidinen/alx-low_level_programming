@@ -8,7 +8,7 @@
  *@age:second member
  *@owner:third member
  *
- *
+ *dog_t - an alias
  *
  *
  */
