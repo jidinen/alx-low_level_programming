@@ -24,7 +24,7 @@ for (i = 0; i < n; i++)
 const char *string = va_arg(myparams, const char *);
 if (string == NULL)
 {
-printf("(nill)");
+printf("(nil)");
 }
 else
 {
@@ -35,6 +35,6 @@ if (i < n - 1 && separator != NULL)
 printf("%s", separator);
 }
 }
-va_end(myparams);
 printf("\n");
+va_end(myparams);
 }
