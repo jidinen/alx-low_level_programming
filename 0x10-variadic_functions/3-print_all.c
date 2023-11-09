@@ -22,10 +22,13 @@
 
 void print_all(const char * const format, ...)
 {
+int i = 0;
+const char *str;
+const char *sep;
 va_list mypar;
 va_start(mypar, format);
-int i = 0;
-const char *sep = "";
+sep = "";
+i = 0;
 while (format[i])
 {
 switch (format[i])
@@ -40,7 +43,7 @@ case 'f':
 printf("%s%f", sep, va_arg(mypar, double));
 break;
 case 's': {
-const char *str = va_arg(mypar, const char*);
+str = va_arg(mypar, const char*);
 if (str != NULL)
 {
 printf("%s%s", sep, str);
