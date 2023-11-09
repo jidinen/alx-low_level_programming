@@ -31,6 +31,8 @@ va_list mypar;
 va_start(mypar, format);
 sep = "";
 i = 0;
+if (format)
+{
 while (format[i])
 {
 switch (format[i])
@@ -63,7 +65,7 @@ break;
 sep = ", ";
 ++i;
 }
-
+}
 va_end(mypar);
 printf("\n");
 }
