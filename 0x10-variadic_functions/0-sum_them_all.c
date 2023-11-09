@@ -3,13 +3,13 @@
 
 
 /**
+ *sum_them_all - sums all the params
  *
  *
+ *@n: numbers of params
  *
  *
- *
- *
- *
+ *Return: the sum
  *
  *
  *

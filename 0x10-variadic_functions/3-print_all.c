@@ -9,7 +9,6 @@
  *
  *@format: specifiers
  *
- *@...: varadic
  *
  *Return: void
  *

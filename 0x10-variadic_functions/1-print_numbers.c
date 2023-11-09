@@ -3,15 +3,15 @@
 #include <stdio.h>
 
 /**
+ *print_numbers - prints numbers
  *
  *
+ *@separator: seperates the numbers
  *
  *
+ *@n: numbers of params
  *
- *
- *
- *
- *
+ *Return: none
  *
  *
  *
@@ -25,10 +25,10 @@ va_start(myparams, n);
 
 for (i = 0; i < n; i++)
 {
-printf("%d",va_arg(myparams,int));
-if(i < n-1 && separator != NULL)
+printf("%d", va_arg(myparams, int));
+if (i < n - 1 && separator != NULL)
 {
-printf("%s",separator);
+printf("%s", separator);
 
 }
 }
