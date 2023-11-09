@@ -66,6 +66,6 @@ sep = ", ";
 ++i;
 }
 }
-va_end(mypar);
 printf("\n");
+va_end(mypar);
 }
