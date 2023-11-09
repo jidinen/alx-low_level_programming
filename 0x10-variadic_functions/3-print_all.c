@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include "variadic_functions.h"
 #include <stdarg.h>
+
 /**
  * print_all - Prints values according to specified format.
  * @format: A format string containing format specifiers for values.
