@@ -47,7 +47,7 @@ hc = *head;
 inz = 0;
 
 
-while (*hc != NULL)
+while (hc != NULL)
 {
  if (idx == inz + 1)
 {
