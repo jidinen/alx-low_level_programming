@@ -4,11 +4,13 @@
 
 
 /**
+ *add_nodeint - adds a node at the begining of a list
  *
  *
+ *@head: starting point of the list
+ *@n: member of the node
  *
- *
- *
+ *Return: the newnode
  *
  *
  *
@@ -28,9 +30,9 @@ if (head == NULL)
 {
 *head = newnode;
 }
-else 
+else
 {
-newnode->next = *head; 
+newnode->next = *head;
 *head = newnode;
 newnode->n = n;
 }

@@ -4,13 +4,13 @@
 #include <stddef.h>
 
 /**
+ *print_listint - prints the members of a struct
  *
  *
+ *@h: the head or starting point of a node
  *
  *
- *
- *
- *
+ *Return: i the numbers of node
  *
  *
  *

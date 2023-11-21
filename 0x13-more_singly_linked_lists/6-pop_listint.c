@@ -3,19 +3,15 @@
 #include "lists.h"
 
 /**
+ *pop_listint - deletes a node
  *
  *
  *
  *
+ *@head: starting point of the list*
  *
  *
- *
- *
- *
- *
- *
- *
- *
+ *Return: the value of the poped node
  *
  *
  *
@@ -30,11 +26,11 @@ if (head == NULL)
 {
 return (0);
 }
-else 
+else
 {
 *head = (*head)->next;
 
 free(x);
 }
-return b;
+return (b);
 }

@@ -3,16 +3,15 @@
 #include "lists.h"
 
 /**
+ *free_listint2 - frees the node (delete)
+ *
+ *@head: starting point of the list
  *
  *
  *
  *
  *
- *
- *
- *
- *
- *
+ *Return: none
  *
  *
  *

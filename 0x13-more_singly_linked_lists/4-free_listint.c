@@ -3,12 +3,12 @@
 #include  "lists.h"
 
 /**
+ *free_listint  - deletes the node
+ *
+ *@head: starting point
  *
  *
- *
- *
- *
- *
+ *Return: none
  *
  *
  *

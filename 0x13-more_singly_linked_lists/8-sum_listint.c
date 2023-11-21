@@ -1,17 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
+
 /**
+ *sum_listint - sum the of the data in a node
  *
  *
  *
+ *@head: starting point of the list
  *
  *
- *
- *
- *
- *
- *
+ *Return: sum
  *
  *
  *

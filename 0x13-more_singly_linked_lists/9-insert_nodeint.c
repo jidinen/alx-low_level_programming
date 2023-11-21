@@ -3,27 +3,29 @@
 #include "lists.h"
 
 /**
+ *insert_nodeint_at_index - at a node at index
  *
  *
  *
+ *@head: the starting point of the node
  *
  *
+ *@idx: the index
  *
  *
+ *@n: data
  *
- *
- *
- *
- *
+ *Return: the newnode
  *
  */
+
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 listint_t *newNode = (listint_t *)malloc(sizeof(listint_t));
 unsigned int inz;
 listint_t *hc;
 
-if(newNode == NULL)
+if (newNode == NULL)
 {
 return (NULL);
 }
@@ -49,7 +51,7 @@ inz = 0;
 
 while (hc != NULL)
 {
- if (idx == inz + 1)
+if (idx == inz + 1)
 {
 
 listint_t *nextN = hc->next;
@@ -62,7 +64,7 @@ return (newNode);
 }
 inz++;
 
-hc = hc->next; 
+hc = hc->next;
 }
 
 free(newNode);

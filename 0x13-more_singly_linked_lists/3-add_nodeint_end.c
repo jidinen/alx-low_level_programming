@@ -3,16 +3,15 @@
 #include "lists.h"
 
 /**
+ *add_nodeint_end - at a node to the end of the list
  *
  *
  *
+ *@head: starting point of the list
  *
+ *@n: member of the node
  *
- *
- *
- *
- *
- *
+ *Return: the node added
  *
  *
  */
@@ -31,7 +30,7 @@ if (*head == NULL)
 {
 *head = enode;
 }
-else 
+else
 {
 listint_t *current = *head;
 while (current->next != NULL)
