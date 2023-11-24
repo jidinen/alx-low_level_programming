@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
+ *print_binary - says it in the name
  *
  *
  *
+ *@n: param
  *
  *
  *
- *
- *
- *
+ *Return: none
  *
  *
  *
@@ -17,28 +17,17 @@
  *
  *
  */
-void print_binary(unsigned long int n)
+void print_binary(unsigned long int n) 
 {
-unsigned long int mask;
-unsigned long int bit;
-int size;
 int i;
-size = sizeof(unsigned long int) * 8;
+int num_bits;
+unsigned long int bit;
+num_bits = sizeof(unsigned long int) * 8;
 
-
-for (i = size - 1; i >= 0; i--)
+for (i = num_bits - 1; i >= 0; i--)
 {
-mask = 1UL << i;
-bit = (n & mask) >> i;
-printf("%01lu", bit);
-if (i % 4 == 0) 
-{
-printf(" ");
+bit = n & (1UL << i);
+printf("%c", bit ? '1' : '0');
 }
-
-printf("%lu", bit);
-
-}
- 
 printf("\n");
 }
