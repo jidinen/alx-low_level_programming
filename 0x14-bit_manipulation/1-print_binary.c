@@ -1,21 +1,17 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- *print_binary - says it in the name
+ *_pow - function
  *
  *
  *
- *@n: param
+ *@base: param
+ *
+ *@power: param
  *
  *
- *
- *Return: none
- *
- *
- *
- *
- *
- *
+ *Return: NU,
  */
 
 unsigned long int _pow(unsigned int base, unsigned int power)
@@ -31,15 +27,20 @@ return (num);
 
 
 
+/**
+ *print_binary - function
+ *
+ *
+ *@n: param
+ *
+ *
+ *Return: none
+ *
+ *
+ */
 
 
-
-
-
-
-
-
-void print_binary(unsigned long int n) 
+void print_binary(unsigned long int n)
 {
 unsigned long int divisor, check;
 char flag;
@@ -54,11 +55,12 @@ if (check == divisor)
 flag = 1;
 _putchar('1');
 }
+
 else if (flag == 1 || divisor == 1)
 {
- _putchar('0');
+_putchar('0');
 }
 divisor >>= 1;
 }
-  
+
 }
