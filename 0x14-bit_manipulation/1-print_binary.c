@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  *print_binary - says it in the name
  *
@@ -17,17 +17,48 @@
  *
  *
  */
+
+unsigned long int _pow(unsigned int base, unsigned int power)
+{
+unsigned long int num;
+unsigned int a;
+
+num = 1;
+for (a = 1; a <= power; a++)
+num *= base;
+return (num);
+}
+
+
+
+
+
+
+
+
+
+
+
 void print_binary(unsigned long int n) 
 {
-int i;
-int num_bits;
-unsigned long int bit;
-num_bits = sizeof(unsigned long int) * 8;
+unsigned long int divisor, check;
+char flag;
 
-for (i = num_bits - 1; i >= 0; i--)
+flag = 0;
+divisor = _pow(2, sizeof(unsigned long int) * 8 - 1);
+while (divisor != 0)
 {
-bit = n & (1UL << i);
-printf("%c", bit ? '1' : '0');
+check = n & divisor;
+if (check == divisor)
+{
+flag = 1;
+_putchar('1');
 }
-printf("\n");
+else if (flag == 1 || divisor == 1)
+{
+ _putchar('0');
+}
+divisor >>= 1;
+}
+  
 }
