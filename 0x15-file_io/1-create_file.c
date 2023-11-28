@@ -24,11 +24,17 @@ int b_r;
 int b_w;
 int fx;
 
-b_w = strlen(text_content);
+b_w = 0;
+while (*text_content != '\0')
+{
+b_w++;
+text_content++;
+}
+
 
 fx = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
-if (filename == NULL)
+if (!filename)
 {
 return (-1);
 }
@@ -37,7 +43,7 @@ if (fx == -1)
 {
 return (-1);
 }
-if (text_content == NULL)
+if (!text_content)
 {
 text_content = "";
 }
