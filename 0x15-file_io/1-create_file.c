@@ -25,37 +25,30 @@ int b_w;
 int fx;
 
 b_w = 0;
+
+
+if (!filename)
+return (-1);
+
+fx = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+
+
+if (fx == -1)
+return (-1);
+
+if (!text_content)
+text_content = "";
+
 while (*text_content != '\0')
 {
 b_w++;
 text_content++;
 }
-
-
-fx = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-
-if (!filename)
-{
-return (-1);
-}
-
-if (fx == -1)
-{
-return (-1);
-}
-if (!text_content)
-{
-text_content = "";
-}
-
-
-b_r = write(1, text_content, b_w);
+b_r = write(fx, text_content, b_w);
 
 if (b_r == -1)
 return (-1);
 
-close(fx);
 
 return (1);
-
 }
