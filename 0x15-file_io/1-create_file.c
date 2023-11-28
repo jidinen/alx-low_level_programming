@@ -37,12 +37,9 @@ return (-1);
 if (!text_content)
 text_content = "";
 
-b_w = 0;
-while (*text_content != '\0')
-{
-b_w++;
-text_content++;
-}
+for (b_w = 0; text_content[b_w]; b_w++)
+	;
+
 b_r = write(fx, text_content, b_w);
 
 if (b_r == -1)
