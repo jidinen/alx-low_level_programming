@@ -2,7 +2,6 @@
 #include "main.h"
 #include <fcntl.h>
 #include <unistd.h>
-#include <string.h>
 
 /**
  *create_file - creates a new file
@@ -24,7 +23,6 @@ int b_r;
 int b_w;
 int fx;
 
-b_w = 0;
 
 
 if (!filename)
@@ -39,6 +37,7 @@ return (-1);
 if (!text_content)
 text_content = "";
 
+b_w = 0;
 while (*text_content != '\0')
 {
 b_w++;
@@ -49,6 +48,7 @@ b_r = write(fx, text_content, b_w);
 if (b_r == -1)
 return (-1);
 
+close(fx);
 
 return (1);
 }
