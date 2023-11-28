@@ -3,17 +3,15 @@
 #include <unistd.h>
 
 /**
+ *append_text_to_file - appends to a file
  *
  *
+ *@filename: the name
  *
  *
+ *@text_content: contents
  *
- *
- *
- *
- *
- *
- *
+ *Return: 1 for success
  *
  *
  *
@@ -35,7 +33,7 @@ return (-1);
 if (text_content)
 {
 
-for(bit = 0; text_content[bit]; bit++)
+for (bit = 0; text_content[bit]; bit++)
 	;
 
 bytes = write(f_x, text_content, bit);
@@ -46,5 +44,5 @@ return (-1);
 
 close(f_x);
 
-return(1);
+return (1);
 }
