@@ -28,14 +28,12 @@
 int main(int argc, char *argv[])
 {
 int f_x, f_y, closef1, closef2;
-char *file1,  *file2;
+
 int b_r, b_w;
 unsigned int mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 char buffer[1024];
 b_r = 1024;
 
-file1 = argv[1];
-file2 = argv[2];
 
 if (argc != 3)
 {
@@ -44,23 +42,23 @@ exit(97);
 }
 
 
-f_x = open(file1, O_RDONLY);
+f_x = open(argv[1], O_RDONLY);
 
-check_i_o_stat(f_x, -1, file1, 'O');
+check_i_o_stat(f_x, -1, argv[1], 'O');
 
-f_y = open(file2, O_WRONLY | O_CREAT | O_TRUNC, mode);
+f_y = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, mode);
 
-check_i_o_stat(f_y, -1, file2, 'W');
+check_i_o_stat(f_y, -1, argv[2], 'W');
 
 while (b_r == 1024)
 {
 b_r = read(f_y, buffer, sizeof(buffer));
 if (b_r == -1)
-check_i_o_stat(-1, -1, file1, 'O');
+check_i_o_stat(-1, -1, argv[1], 'O');
 
 b_w = write(f_x, buffer, b_r);
 if (b_w == -1)
-check_i_o_stat(-1, -1, file2, 'W');
+check_i_o_stat(-1, -1, argv[2], 'W');
 
 }
 closef1 = close(f_x);
