@@ -89,17 +89,17 @@ void check_i_o_stat(int stat, int fd, char *filename, char mode)
 {
 if (mode == 'C' && stat == -1)
 {
-dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 exit(100);
 }
-if (mode == 'O' && stat == -1)
+else if (mode == 'O' && stat == -1)
 {
-dprintf(STDERR_FILENO, "Error: can't read from file %s\n", filename);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 exit(98);
 }
 else if (mode == 'W' && stat == -1)
 {
-dprintf(STDERR_FILENO, "Error: can't read from file %s\n", filename);
+dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", filename);
 exit(99);
 }
 }
