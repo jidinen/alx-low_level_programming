@@ -43,13 +43,15 @@ dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
 }
 
-if (!file1)
-return (-1);
 
 f_x = open(file1, O_RDONLY);
+
 check_i_o_stat(f_x, -1, file1, 'O');
-f_y = open(file2, O_WRONLY |O_CREAT | O_TRUNC, mode);
+
+f_y = open(file2, O_WRONLY | O_CREAT | O_TRUNC, mode);
+
 check_i_o_stat(f_y, -1, file2, 'W');
+
 while (b_r == 1024)
 {
 b_r = read(f_y, buffer, sizeof(buffer));
