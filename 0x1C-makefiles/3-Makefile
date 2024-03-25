@@ -1,0 +1,21 @@
+# adding rules to my makefile
+
+CC = gcc 
+SRC= school.c main.c
+OBJ= $(SRC:.c=.o)
+NAME= school
+RM = rm -f 
+
+all: $(OBJ)
+	$(CC) -o $(NAME) $(SRC)
+
+clean:
+	$(RM)  ~$(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: 
+	clean oclean
+
+re: fclean all
