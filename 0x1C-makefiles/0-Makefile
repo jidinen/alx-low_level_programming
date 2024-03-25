@@ -1,0 +1,4 @@
+#Creating a makefile
+
+all : main.c school.c
+	gcc school main.c school.c
