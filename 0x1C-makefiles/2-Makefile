@@ -1,4 +1,4 @@
-# First useful file 	
+#First useful file
 	
 CC = gcc
 SRC = main.c school.c
