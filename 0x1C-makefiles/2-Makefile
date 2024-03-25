@@ -1,0 +1,11 @@
+# -*- First useful file -*-	
+	
+CC = gcc
+SRC = school.c main.c
+OBJ = main.o school.o
+NAME = school
+
+all: $(NAME)
+$((NAME): $(OBJ)
+	$(CC) -o $(NAME) $(OBJ)
+	$(CC) $(CFLAGS) -c $<
