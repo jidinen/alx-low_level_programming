@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "search_algos.h"
 
 /**
  *linear_search - an algorithm that searches for an element in an array
