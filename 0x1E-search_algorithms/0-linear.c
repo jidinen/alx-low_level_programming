@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- *linear search - an algorithm that searches for an element in an array
+ *linear_search - an algorithm that searches for an element in an array
  *
  *
  *@array: pointer to the array
  *
- *@size: size of the array 
+ *@size: size of the array
  *
  *
- *@value: the target 
+ *@value: the target
  *
  *
  *Return: the value or target or return -1 if not found
@@ -28,7 +28,7 @@ for (i = 0; i < size; i++)
 {
 printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 if (array[i] == value)
-return i;
+return (i);
 
 
 }
