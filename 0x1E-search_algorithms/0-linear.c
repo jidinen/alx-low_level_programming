@@ -1,15 +1,18 @@
 #include <stdio.h>
 
 /**
+ *linear search - an algorithm that searches for an element in an array
  *
  *
+ *@array: pointer to the array
+ *
+ *@size: size of the array 
  *
  *
+ *@value: the target 
  *
  *
- *
- *
- *
+ *Return: the value or target or return -1 if not found
  *
  *
  */
