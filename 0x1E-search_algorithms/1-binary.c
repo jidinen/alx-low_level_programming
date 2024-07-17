@@ -1,5 +1,5 @@
 #include "search_algos.h"
-
+#include <stdio.h>
 /**
  * binary_search - Searches for a value in a sorted array using binary search
  * @array: Pointer to the first element of the array
